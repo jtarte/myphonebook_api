@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: phonebookapi
-          image: docker-registry.default.svc:5000/phonebook/myphonebook_api:latest
-          imagePullPolicy: "IfNotPresent"       
+          image: image-registry.openshift-image-registry.svc:5000/myphonebook/myphonebook_api:latest
+          imagePullPolicy: "IfNotPresent"
           ports:
             - containerPort: 8080
           envFrom:
@@ -25,4 +25,3 @@ spec:
                 name: phonebookapi-config
             - secretRef:
                 name: phonebookapi-secret
-          

@@ -5,5 +5,5 @@ metadata:
   labels:
     app: phonebook
 data:
-  DB_HOST: postgres
+  DB_HOST: phonebook
   DB_PORT: "5432"

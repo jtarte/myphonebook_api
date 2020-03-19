@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: dbinit
-        image: docker-registry.default.svc:5000/phonebook/db_init
+        image: image-registry.openshift-image-registry.svc:5000/myphonebook/db_init
         envFrom:
             - configMapRef:
                 name: phonebookapi-config
